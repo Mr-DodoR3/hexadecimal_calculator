@@ -1,0 +1,13 @@
+h3 {
+  display: block;
+  margin: 4px;
+}
+
+p {
+  display: inline-block;
+  margin: 4px;
+}
+
+.version {
+  margin-top: 72px;
+}

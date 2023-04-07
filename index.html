@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+  <title>進数変換機</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <h3>進数変換機</h3>
+  <p>2進数から36進数までで進数変換します。</p>
+  <div>
+    <label>変換する値:<input type="text" size="24" id="value"></label>
+  </div>
+  <div>
+    <label>変換する値の進数:<input type="text" size="4" id="originalHex" value="10"></label>
+  </div>
+  <div>
+    <label>変換後の進数:<input type="text" size="4" id="conversionHex" value="2"></label>
+  </div>
+  <div>
+    <input type="button" value="変換" id="button" onclick="buttonClick()">
+    <input type="button" value="文字数字対応表" id="table" onclick="buttonClick()">
+    <select size="1" id="select">
+      <option>大文字</option>
+      <option>小文字</option>
+    </select>
+  </div>
+  <div>
+    <p id="text">値:</p>
+  </div>
+  <div class="version">
+    <p>ver 1.0.0</p>
+  </div>
+</body>
+</html>
